@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbrenCare - Welcome to Abrencare – your partner for person-centred care and care at home. </title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="shortcut icon" href="./asset/full scale png.png" class="max-w-20" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="bg-center bg-cover relative">
+
+    <div class="absolute z-20 max-h-screen inset-0 bg-black opacity-70"></div>
+
+    
+    
+    <div class="loader-wrapper fixed inset-0 flex justify-center items-center bg-white z-50" id="loader">
+        <div class="loader relative w-40 h-40" style="filter: url(#gooey);">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+        </div>
+        <svg class="hidden">
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                <feColorMatrix values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 20 -10"/>
+            </filter>
+        </svg>
+    </div>
+
+    <div class="overflow-hidden relative min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0">
+      <!-- <header class="absolute top-0 left-0 w-full flex items-center justify-between p-4 text-white z-10 ">
+          <div>
+              <a href="#"><img src="./asset/abren-care.png" class="w-48" alt="logo"></a>
+          </div>
+          
+          <ul class="flex gap-10 navbar teachers-subheading text-xl">
+              <li><a href="index.html" class="hover-underline-animation nav-link">Hem</a></li>
+              <li><a href="about-us.html" class="hover-underline-animation nav-link">Om oss</a></li>
+              <li><a href="#" class="hover-underline-animation nav-link">Tjänster</a></li>
+              <li><a href="#" class="hover-underline-animation nav-link">Kontakt</a></li>
+          </ul>
+          <ul class="flex gap-2 lan-change teachers-subheading text-xl">
+              <li><a href="english-about-us.html" class="to-english text-gray-300 hover:text-teal-500">En</a></li>
+              <li><a href="about-us.html" class="to-swedish text-gray-300 hover:text-teal-500">Se</a></li>
+          </ul>
+      </header> -->
+      <nav class="relative z-50 w-full sm:px-10 md:px-20">
+        <div class="flex justify-between items-center gap-8">
+          <div class="nav__logo">
+            <a href="#"><img src="./asset/abren-care.png" class="w-48" alt="logo"></a>
+          </div>
+          <div class="nav-links gap-20 items-center ">
+            <ul class="flex items-center gap-10 text-white text-xl">
+              <li class="hover:text-teal-500 duration-300"><a href="english-index.html" >Home</a></li>
+              <li class="hover:text-teal-500 duration-300"><a href="about-us.html" >About-Us</a></li>
+              <li class="hover:text-teal-500 duration-300"><a href="#services" >Services</a></li>
+              <li class="hover:text-teal-500 duration-300"><a href="#contact" >Contact</a></li>
+            </ul>
+            <ul class="flex gap-2 font-bold text-xl ">
+              <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+              <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+            </ul>
+          </div>
+          <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
+            <i class="ri-menu-fill"></i>
+          </div>
+        </div>
+        <div class="absolute top-0 right-0 duration-300 translate-x-[100%] flex flex-col items-center gap-10 text-white bg-teal-500 w-full py-20" id="mobile-nav">
+          <div class="absolute top-3 right-3 text-3xl" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+          <a href="english-index.html" >Home</a>
+          <a href="about-us.html" >About-Us</a>
+          <a href="#services" >Services</a>
+          <a href="#contact" >Contact</a>
+          <ul class="flex gap-2 font-bold text-xl ">
+            <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
+            <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <img class="absolute z-10 bg-cover bg-center min-h-screen w-full object-cover object-center" src="./asset/care.jpg"  alt="">
+
+      <div class="about-us-container z-30" id="about-us">
+          <div class="about-us flex flex-col justify-center items-center p-8">
+              <h1 class="outfit-mainheading text-center text-6xl text-white">
+                  ABOUT US
+              </h1>
+          
+              <svg class="arrows">
+                  <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                  <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                  <path class="a3" d="M0 40 L30 72 L60 40"></path>
+              </svg>
+          </div>
+      </div>
+      
+  </div>
+
+    
+    <!-- <div class="description-section min-h-screen w-full flex flex-col justify-between bg-center bg-cover inset-0 bg-white">
+        <div class="flex justify-center items-center min-h-screen">
+            <div class="w-70 h-70 bg-black"></div>
+           
+            <div class="area" >
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div >
+        </div>
+    </div> -->
+
+    <div class="reveal description-section flex items-center" id="description-section">
+        <div class="justify-center flex bg-white child-div items-center rounded-3xl backdrop-blur-sm bg-white/30 flex-grow flex-col">
+            <div class="flex flex-col justify-center items-center flex-auto mt-72">
+                <h1 class="outfit-mainheading text-center text-6xl">
+                    OUR <span class="text-justify text-teal-300">PRIORITIES</span>
+                </h1>
+
+                <div class="the-line bg-teal-200 h-1 w-32 justify-center z-40 mx-auto absolute top-56"></div>
+    
+                <p class="text-center z-10 shrink leading-loose text-xl">
+                    At Abrencare, we strive to offer person-centered care and high-quality care in the home. 
+                    We value and respect each individual's unique needs and wishes by creating a safe and trusting 
+                    environment where the customer is always in focus. We combine our experience, competence and 
+                    empathy to ensure that each client receives the care and attention they deserve. With us, the 
+                    individual is active in his implementation plan and we always prioritize the customer's 
+                    right to decide for himself. We strive to create an environment where the customer's 
+                    boundaries are respected and where they feel worthy and respected.               </p>
+
+            </div>
+
+            
+
+        </div>
+        
+        <div class="area min-h-screen">
+            
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="reveal marquee w-full h-20 flex items-center bg-teal-300">
+      <div class="marquee-content text-3xl">
+          <span>Patient satisfaction</span> &#8226; 
+          <span>Efficiency</span> &#8226; 
+          <span>Safety</span> &#8226; 
+          <span>Evidence-based care</span> &#8226; 
+          <span>Teamwork and communication</span>
+      </div>
+    </div>
+
+
+    <div class="reveal relative min-h-screen flex flex-col md:flex-row mx-auto w-full bg-white ">
+
+        <div class=" md:w-2/3  content-container relative-container w-3/6 h-2/4 absolute left-12 p-4 top-1/2 transform -translate-y-1/2 text-center z-20">
+            <h1 class="text-black outfit-mainheading text-5xl text-left mb-6">
+                Refined operational method
+            </h1>
+            <p class="text-left teachers-lowerheading leading-loose">
+                At Abrencare, we value person-centred care where each individual is treated 
+                with respect and dignity. We create individualized care plans based on your 
+                needs and wishes to ensure safety, quality and continuity in our care and 
+                care. We offer multilingual staff and follow strict quality and safety 
+                procedures according to industry standards to ensure the highest standards 
+                in our work. We at Abrencare prioritize several important areas to ensure 
+                high quality and efficiency in our healthcare.
+            </p>
+
+            
+        </div>
+
+        <div class="gradient-container w-full md:w-1/3 h-56 md:h-auto absolute bottom-0 md:relative md:bottom-36">
+          <img class="w-1/3 absolute bottom-36" src="./asset/gradient.png" alt="">
+      
+          <div class="gradient-container">
+      
+              <img class="dr-img relative h-full" src="./asset/dr.png" alt="">
+      
+    
+          </div>
+        </div>
+        
+        
+    </div>
+
+    
+
+
+
+
+        <div class="reveal bg-blue-gray-50 py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+              <div class="max-w-2xl">
+                <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our <span class="text-teal-300">leadership</span></h2>
+                <p class="mt-6 text-lg leading-6 text-gray-600">At Abrencare, our experienced team of healthcare, social work, and 
+                  administrative professionals is dedicated to providing high-quality services in a safe and 
+                  trusting environment. We are passionate about making a positive difference and improving 
+                  the quality of life and well-being for our clients and their families.</p>
+              </div>
+              <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-16 w-16 rounded-full" src="./asset/nurse-avatar.jpg" alt="">
+                    <div>
+                      <a href="mailto:melat@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">melat@abrencare.se</h3></a>
+                      <p class="text-sm font-semibold leading-6 text-teal-300">CEO / Manager</p>
+                    </div>
+                  </div>
+                </li>
+          
+                <!-- More people... -->
+
+                <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="./asset/man-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:israel@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">israel@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Head of unit</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="./asset/unknown-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:coordinator@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">coordinator@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Coordinator</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="./asset/unknown-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:kevalitet@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">kevalitet@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Quality, education and deviations</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center gap-x-6">
+                      <img class="h-16 w-16 rounded-full" src="./asset/unknown-avatar.jpg" alt="">
+                      <div>
+                        <a href="mailto:info@abrencare.se"><h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">info@abrencare.se</h3></a>
+                        <p class="text-sm font-semibold leading-6 text-teal-300">Economics / IT</p>
+                      </div>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+
+
+          
+<!-- Contact section -->
+<div class="reveal relative w-full min-h-screen flex sm:flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row bg-[url('../asset/contact-us-image.png')] overflow-visible px-5" id="contact">
+    <div class="flex-[1] flex flex-col justify-end px-[100px] py-[70px]">
+      <p class="text-4xl font-bold text-white">Get In <span class="text-teal-300">Touch</span></p>
+    </div>
+  
+    <div class="flex-[1.5] relative">
+      <div class="2xl:w-[600px] xl:w-[500px] h-screen bg-white rounded-lg translate-y-20 px-[50px] py-[100px]">
+        <form action="" class="w-full h-full flex flex-col items-center gap-[80px]" >
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="name" id="name" placeholder="Name">
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] type="email" name="email" id="email" placeholder="Email">
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] type="tel" name="phone" id="phone" placeholder="Phone">
+          <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="message" id="message" placeholder="Message">
+          <!-- <textarea class="outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> -->
+          <button class="w-fit bg-teal-300 text-white text-2xl py-4 px-10">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 pt-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex flex-row flex-wrap lg:flex-row justify-between gap-12">
+        <div class="max-w-80 flex flex-col gap-6">
+          <img src="./asset/abren-care.png" alt="AbrenCare Logo" class="w-40">
+          <p class="text-sm leading-6">AbrenCare is a leading provider of home health care services. 
+            We offer a wide range of services to help individuals live independently in the comfort of their own homes.</p>
+        </div>
+        <div class="max-w-80 flex flex-col gap-6">
+          <h3 class="text-lg font-semibold">Contact Us</h3>
+          <p class="text-sm leading-6">1234 Main Street, Suite 100</p>
+          <p class="text-sm leading-6">City, State, 12345</p>
+          <p class="text-sm leading-6">Phone: 0736263585</p>
+          <p class="text-sm leading-6">Email: info@abrencare.se</p>
+        </div>
+        <div class="max-w-80 flex flex-col gap-6">
+          <h3 class="text-lg font-semibold">Quick Links</h3>
+          <a href="abrencare.se/#home" class="text-sm leading-6 hover:text-teal-300">Home</a>
+          <a href="abrencare.se/#about-us" class="text-sm leading-6 hover:text-teal-300">About Us</a>
+          <a href="abrencare.se/#services" class="text-sm leading-6 hover:text-teal-300">Services</a>
+          <a href="abrencare.se/#news" class="text-sm leading-6 hover:text-teal-300">News</a>
+          <a href="#contact" class="text-sm leading-6 hover:text-teal-300">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+    
+    
+
+
+
+
+    <script  src="main.js"></script>
+    <script  src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+</body>
+</html>
