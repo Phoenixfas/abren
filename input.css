@@ -500,27 +500,36 @@ html, body {
 .nav-links{
     display: flex;
 }
+.contact-form{
+    display: block;
+}
+/* .hero-text{
+    text-decoration: none;
+} */
 @media only screen and (max-width: 600px) {
     .nav-links{
         display: none;
     }
-    .dr-img{
-        display: none;
+    .contact-form{
+        transform: translateY(0) !important;
     }
+    /* .hero-text{
+        font-size: 3rem !important;
+    } */
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .nav-links{
         display: none;
     }
-    .dr-img{
-        display: none;
+    .contact-form{
+        transform: translateY(0) !important;
     }
+    /* .hero-text{
+        font-size: 3rem !important;
+    } */
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .nav-links{
-        display: none;
-    }
-    .dr-img{
         display: none;
     }
 }
