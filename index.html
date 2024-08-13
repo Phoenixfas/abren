@@ -69,7 +69,7 @@
   <nav class="relative w-full sm:px-10 md:px-20">
     <div class="flex justify-between items-center gap-8">
       <div class="nav__logo">
-        <a href="#"><img src="./asset/abren-care.png" class="w-48" alt="logo"></a>
+        <a href="#"><img src="./asset/abren-care.png" class="w-40" alt="logo"></a>
       </div>
       <div class="nav-links gap-20 items-center ">
         <ul class="flex items-center gap-10 text-white text-xl">
@@ -79,8 +79,8 @@
           <li class="hover:text-teal-500 duration-300"><a href="#contact" >Kontakt</a></li>
         </ul>
         <ul class="flex gap-2 font-bold text-xl ">
-          <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
-          <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+          <li class="nav__item "><a href="./english-index.html" class="to-english text-white hover:text-teal-500 flex items-center gap-2">En<img src="./asset/us.png" alt="us-lang" class="w-5" /></a></li><span class="text-white">/</span>
+          <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500 flex items-center gap-2">Se<img src="./asset/sweden.png" alt="us-lang" class="w-5" /></a></li>
         </ul>
       </div>
       <div class="sm:flex lg:hidden text-white text-3xl px-2 py-1 border-2 border-white rounded-lg" id="nav-toggle">
@@ -96,8 +96,8 @@
       <a href="#services" >Tjänster</a>
       <a href="#contact" >Kontakt</a>
       <ul class="flex gap-2 font-bold text-xl ">
-        <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500">En</a></li>
-        <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500">Se</a></li>
+        <li class="nav__item"><a href="./english-index.html" class="to-english text-white hover:text-teal-500 flex items-center gap-2">En<img src="./asset/us.png" alt="us-lang" class="w-5" /></a></li><span class="text-white">/</span>
+        <li class="nav__item"><a href="./index.html" class="to-swedish text-white hover:text-teal-500 flex items-center gap-2">Se<img src="./asset/sweden.png" alt="us-lang" class="w-5" /></a></li>
       </ul>
     </div>
   </nav>
@@ -105,7 +105,7 @@
   
 
   <section class=" bg-gray-100" id="home">
-      <video autoplay muted loop class="absolute z-10 w-auto min-w-full min-h-full max-w-none bg-cover" id="HomeVideo">
+      <video autoplay muted loop class="absolute z-10 w-full h-screen bg-cover" id="HomeVideo">
           <source src="./asset/home-vid.mp4" type="video/mp4">
         </video>
   </section>
@@ -123,7 +123,7 @@
           </button>
       </a>
 
-      <a href="#contact"><img class="icon phone-icon w-12 absolute bottom-0 right-0 m-4" src="./asset/phone-call.png" alt=""></a>
+      <a href="tel:+46736263585 "><img class="icon phone-icon w-12 absolute bottom-0 right-0 m-4" src="./asset/phone-call.png" alt=""></a>
   </div>
   
 
@@ -138,6 +138,23 @@
 <!-- Cards for the second page -->
 
 <div class="reveal container mx-auto my-4  px-4">
+  <div style="position: absolute;" class="area min-h-screen">
+            
+    <ul class="circles ">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+</div>
   <div class="p-4 text-center justify-center">
     <h1 class="text-3xl outfit-mainheading mx-auto">
       VARFÖR <span class="text-teal-300"> VÄLJA</span> OSS?
@@ -145,7 +162,7 @@
 
     <div class="the-line bg-teal-200 absolute h-1 w-32 justify-center z-40 top-20 "></div>
   </div>
-    <div class="grid gap-6 md:grid-cols-3 py-10">
+    <div style="position: relative;" class="grid gap-6 md:grid-cols-3 py-10">
       
         <!-- Card 1 -->
         <div class=" bg-white p-5 rounded-lg shadow-2xl flex items-center space-x-4 cursor-pointer ">
@@ -228,13 +245,30 @@
 
 <!-- my services page  -->
 <section class=" reveal bg-blue-gray-100" id="services">
+  <div style="position: absolute;" class="area min-h-screen">
+            
+    <ul class="circles ">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+</div>
   <div class="myservice">
     <h1 class="outfit-mainheading text-center text-bold text-4xl py-10"> 
       VÅRA <span class="text-teal-300">TJÄNSTER</span>
     </h1>
     <div class="the-line bg-teal-200 h-1 w-32 justify-center z-40 mx-auto mb-12 "></div>
   </div>
-  <div class="container mx-auto my-4 px-4 pb-12">
+  <div style="position: relative; " class="container mx-auto my-4 px-4 pb-12">
     <div class="flex flex-wrap justify-center gap-6">
       <!-- Card 1 -->
       <div class="bg-white p-8 rounded-lg shadow-2xl flex flex-col items-center w-full md:w-1/2 lg:w-1/3">
@@ -608,7 +642,7 @@
       </article>
 
       <!-- Article 2 -->
-      <article class="flex flex-col items-start justify-between max-w-xs">
+      <!-- <article class="flex flex-col items-start justify-between max-w-xs">
         <div class="flex items-center gap-x-4 text-xs">
           <time datetime="2020-03-16" class="text-gray-500">19 maj 2024</time>
           <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Ekonomi/ IT</a>
@@ -635,7 +669,7 @@
             <p class="text-gray-600">Försäljningschef</p>
           </div>
         </div>
-      </article>
+      </article> -->
 
       <!-- Article 3 -->
       <article class="flex flex-col items-start justify-between max-w-xs">
@@ -682,13 +716,13 @@
 
   <div class="flex-[1.5] relative">
     <div class="contact-form 2xl:w-[600px] xl:w-[500px] h-screen bg-white rounded-lg translate-y-20 px-[50px] py-[100px]">
-      <form action="" class="w-full h-full flex flex-col items-center gap-[80px]" >
-        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="name" id="name" placeholder="namn">
-        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] type="email" name="email" id="email" placeholder="E-post">
-        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] type="tel" name="phone" id="phone" placeholder="Telefon">
-        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="message" id="message" placeholder="Meddelande">
+      <form action="mailto:info@abrencare.se? subject=From%20the%20website" class="w-full h-full flex flex-col items-center gap-[80px]" >
+        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="name" id="name" placeholder="namn" required>
+        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="email" name="email" id="email" placeholder="E-post" required>
+        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="tel" name="phone" id="phone" placeholder="Telefon" required>
+        <input class="w-full outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999]" type="text" name="message" id="message" placeholder="Meddelande" required>
         <!-- <textarea class="outline-none border-b border-teal-300 text-xl py-1 font-medium placeholder:text-[#999] name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> -->
-        <button class="w-fit bg-teal-300 text-white text-2xl py-4 px-10">Skicka</button>
+        <button type="submit" class="w-fit bg-teal-300 text-white text-2xl py-4 px-10">Skicka</button>
       </form>
     </div>
   </div>
@@ -700,20 +734,21 @@
     <div class="flex flex-row flex-wrap lg:flex-row justify-between gap-12">
       <div class="max-w-80 flex flex-col gap-6">
         <img src="./asset/abren-care.png" alt="AbrenCare Logo" class="w-40">
-        <p class="text-sm leading-6">AbrenCare är en ledande leverantör av hemsjukvård. Vi erbjuder ett 
-          brett utbud av tjänster för att hjälpa individer att leva självständigt i bekvämligheten av sina egna hem.</p>
+        <p class="text-sm leading-6">På AbrenCare erbjuder vi ett brett utbud av tjänster för att hjälpa individer 
+          att leva självständigt i bekvämligheten av sina egna hem.
+          </p>
       </div>
       <div class="max-w-80 flex flex-col gap-6">
         <h3 class="text-lg font-semibold">Kontakta oss</h3>
-        <p class="text-sm leading-6">1234 Main Street, Suite 100</p>
-        <p class="text-sm leading-6">City, State, 12345</p>
-        <p class="text-sm leading-6">Phone: 0736263585</p>
+        <p class="text-sm leading-6">Galoppgatan 13, 194 30, Upplands Väsby</p>
+        <p class="text-sm leading-6">Phone: +46 73 62 63 585</p>
+        <p class="text-sm leading-6">Phone: +46 73 576 25 35</p>
         <p class="text-sm leading-6">Email: info@abrencare.se</p>
       </div>
       <div class="max-w-80 flex flex-col gap-6">
         <h3 class="text-lg font-semibold">snabblänkar</h3>
-        <a href="#" class="text-sm leading-6 hover:text-teal-300">Hem</a>
-        <a href="#" class="text-sm leading-6 hover:text-teal-300">Om oss</a>
+        <a href="index.html" class="text-sm leading-6 hover:text-teal-300">Hem</a>
+        <a href="about-us.html" class="text-sm leading-6 hover:text-teal-300">Om oss</a>
         <a href="#" class="text-sm leading-6 hover:text-teal-300">Tjänster</a>
         <a href="#" class="text-sm leading-6 hover:text-teal-300">Nyheter</a>
         <a href="#" class="text-sm leading-6 hover:text-teal-300">Kontakt</a>

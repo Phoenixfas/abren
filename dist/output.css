@@ -1298,6 +1298,9 @@ video {
 .w-48 {
   width: 12rem;
 }
+.w-100 {
+  width: 15rem;
+}
 
 .w-5 {
   width: 1.25rem;
